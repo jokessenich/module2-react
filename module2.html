@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+</head>
+<body>
+        <div id="application-root"></div>
+      
+      <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+      </script>
+      <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+      </script>
+      <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+      </script>
+      
+      <script type="text/babel">
+    /*function App() {
+
+  return (
+    <header>
+        <h1>Sally Student's Resume</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>West Windsor Plainsboro North High School (2000-2006)</li>
+                <li>Peter Pleasant's Acorn University (2006-2012)</li>
+            </ul>
+        </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        <ul>
+            <li><h3>Carrie's Cardigans</h3>
+            <h4>Assistant to the Regional Manager (Nov 2012- Nov 2014)</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eligendi distinctio libero error vitae aliquid aut autem doloribus delectus necessitatibus possimus tempora, ipsam sequi, quae architecto maxime asperiores qui voluptate.</p>
+
+            <li><h3>Nienz's Knitting</h3>
+            <h4>Nicest Knitswoman(Nov 2014- Dec 2018)</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eligendi distinctio libero error vitae aliquid aut autem doloribus delectus necessitatibus possimus tempora, ipsam sequi, quae architecto maxime asperiores qui voluptate.</p>
+        </ul>
+    </section>
+
+    <section>
+      <h2>Contact Information</h2>
+
+      <address>
+        <p>Sally Student</p>
+        <a href="mailto:SallyStudent@aol.com">Email Sally Student</a><br><br>
+        <a href="tel:909-877-1123">(909)-877-1123</a>
+        <img
+        src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"
+        alt="Ilana from Broad City">
+      </address>
+    </section>
+  );
+}
+
+// Nested elements inside the App
+ReactDOM.render(
+  <App />,
+  document.querySelector('#application-root')
+);
+*/
+function App(props) {
+  console.log(props)
+  return (
+    <div>
+        <header>
+            <h1>Sally Student's Resume</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>Education</h2>
+                <ul>
+                    <li>West Windsor Plainsboro North High School (2000-2006)</li>
+                    <li>Peter Pleasant's Acorn University (2006-2012)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Work Experience</h2>
+                <ul>
+                    <li><h3>Carrie's Cardigans</h3>
+                    <h4>Assistant to the Regional Manager (Nov 2012- Nov 2014)</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eligendi distinctio libero error vitae aliquid aut autem doloribus delectus necessitatibus possimus tempora, ipsam sequi, quae architecto maxime asperiores qui voluptate.</p></li>
+
+                    <li><h3>Nienz's Knitting</h3>
+                    <h4>Nicest Knitswoman(Nov 2014- Dec 2018)</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eligendi distinctio libero error vitae aliquid aut autem doloribus delectus necessitatibus possimus tempora, ipsam sequi, quae architecto maxime asperiores qui voluptate.</p></li>
+                </ul>
+            </section>
+        </main>
+
+        <section>
+            <h2>Contact Information</h2>
+
+            <address>
+                <p>Sally Student</p>
+                <a href="mailto:SallyStudent@aol.com">Email Sally Student</a>
+                <a href="tel:909-877-1123">(909)-877-1123</a>
+                <img
+                src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg"
+                alt="Ilana from Broad City" />
+            </address>
+        </section>
+    </div>
+  );
+}
+
+// Nested elements inside the App
+ReactDOM.render(
+  <App className='my-class'>
+    <h1>Current Page Title!</h1>
+  </App>,
+  document.querySelector('#application-root')
+);    
+      </script>
+      </body>
+</html>
